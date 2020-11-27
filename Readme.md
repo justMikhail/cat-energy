@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Check status][check-image]][check-url]
 
 * Студент: [Mikhail Sitnikov](https://up.htmlacademy.ru/adaptive/21/user/1537799).
-* Наставник: `Неизвестно`.
+* Наставник: [Артик Ман](https://htmlacademy.ru/profile/id1445657).
 
 ---
 
