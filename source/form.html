@@ -28,6 +28,108 @@
   </header>
 
   <main class="page__main main">
+      <section class="program-selection">
+        <div class="program-selection__container container">
+          <h1 class="program-selection__title">Подбор программы</h1>
+          <p class="program-selection__subtitle">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+          <form class="program-selection__form form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__list">
+              <legend class="visually-hidden">Данные питомца клиента</legend>
+              <label class="form__text-input text-input" for="name">
+                <span class="text-input__label">Имя:*</span>
+                <input class="text-input__input" type="text" id="name" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="form__text-input text-input" for="weight">
+                <span class="text-input__label">Вес (кг):*</span>
+                <input class="text-input__input" type="text" id="weight" name="weight" placeholder="7" required>
+              </label>
+              <label class="form__text-input text-input" for="age">
+                <span class="text-input__label">Возраст (лет):</span>
+                <input class="text-input__input" type="text" id="age" name="age" placeholder="7">
+              </label>
+            </fieldset>
+
+            <fieldset class="form__list program-choices">
+              <legend class="visually-hidden">Введите данные своего питомца</legend>
+              <div class="form__radio-button radio-button">
+                <input class="radio-button__input" type="radio" id="radio-1" name="program-choice" checked>
+                <label class="radio-button__label" for="adio-1" tabindex="0">Похудение</label>
+              </div>
+              <div class="form__radio-button radio-button">
+                <input class="radio-button__input" type="radio" id="radio-2" name="program-choice">
+                <label class="radio-button__label" for="adio-2" tabindex="0">Набор массы</label>
+              </div>
+              <div class="form__radio-button radio-button">
+                <input class="radio-button__input" type="radio" id="radio-3" name="program-choice">
+                <label class="radio-button__label" for="adio-3" tabindex="0">Не знаю (нужен ваш совет)</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form__list customers-contact">
+              <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
+              <label class="form__text-input text-input" for="customers-email">
+                <span class="text-input__label">E-mail*:</span>
+                <input class="text-input__input" type="email" id="customers-email" name="customers-email" placeholder="kuklachev@gmail.com" required>
+                <!--место под SVG иконку email-->
+              </label>
+              <label class="form__text-inputtext-input" for="customers-tel">
+                <span class="text-input__label">Телефон:*</span>
+                <input class="text-input__input" type="tel" id="customers-tel" name="customers-tel" placeholder="8 (960) 900-60-90" required>
+                <!--место под SVG иконку tel-->
+              </label>
+            </fieldset>
+
+            <fieldset class="form__list customers-comment">
+              <legend><label class="form__subtitle" for="comment">Комментарий</label></legend>
+              <textarea class="form__textaria" id="comment" name="comment" rows="7" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+
+            <fieldset class="form__element additional">
+              <legend class="form__subtitle">Дополнительно</legend>
+              <div class="additional__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="sugarfree" name="sugarfree" value="sugarfree" checked>
+                <label class="checkbox__label" for="sugarfree">Сахарозаменитель</label>
+              </div>
+              <div class="additional__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="water" name="water" value="water">
+                <label class="checkbox__label" for="water">Питьевая вода</label>
+              </div>
+              <div class="additional__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="milk" name="milk" value="milk">
+                <label class="checkbox__label" for="milk">Молоко</label>
+              </div>
+              <div class="additional__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
+                <label class="checkbox__label" for="vitamins">Витамины</label>
+              </div>
+            </fieldset>
+            <button class="form__submit main-button" type="submit">Отправить заявку</button>
+            <p class="form__legend">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="main-contacts contacts">
+        <div class="contacts__container container">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="contacts__text">
+            <p>
+              ул. Большая
+              Конюшенная, д. 19/8
+            </p>
+            <p>
+              Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.415024106482!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596378765270!5m2!1sru!2sru"
+          width="100%" height="362" allowfullscreen="" title="Адрес офиса компании: город Санкт-Петербург,улица Большая Конюшенная, 19/8"></iframe>
+        </div>
+      </section>
 
   </main>
 
@@ -66,8 +168,6 @@
       </div>
     </div>
   </footer>
-
-
 
 </body>
 </html>
