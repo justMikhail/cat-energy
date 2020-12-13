@@ -1,7 +1,23 @@
 
 // Normolize------------------------------------------------------------------------------
-@import "normalize.scss";
+@import "./normalize.scss";
 
 // Fonts----------------------------------------------------------------------------------
-@import "fonts.scss";
+@import "./fonts.scss";
 
+// Global---------------------------------------------------------------------------------
+@import "./blocks/container.scss";
+
+// Blocks---------------------------------------------------------------------------------
+
+// Common blocks
+@import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+
+// Index
+
+
+// Catalog
+
+
+// Form
