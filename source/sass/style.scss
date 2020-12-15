@@ -8,11 +8,14 @@
 // Variables------------------------------------------------------------------------------
 @import "./common/variables.scss";
 
+// Mixins---------------------------------------------------------------------------------
+@import "./common/mixins.scss";
+
 // Common---------------------------------------------------------------------------------
 @import "./common/common.scss";
 
 // Container
-@import "./blocks/container.scss";
+@import "./common/container.scss";
 // Main-button
 @import "./common/main-button.scss";
 

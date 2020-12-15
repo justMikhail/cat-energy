@@ -1,3 +1,7 @@
-.programs__container {
+.programs__list {
+  @include list-reset;
+}
+
+.program-card {
   background-color: $basic-gray-3;
 }

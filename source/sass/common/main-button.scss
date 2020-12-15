@@ -1,7 +1,7 @@
 .main-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+
+  min-height: 40px;
 
   background-color: $basic-green;
   color: $white;

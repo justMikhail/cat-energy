@@ -1,8 +1,12 @@
 // Viewports------------------------------------------------------------
+// breakpoint
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
-
+// max-device-width
+$max-mobile-width: 480px;
+$max-tablet-width: 1280px;
+$max-desktop-width: 1300px;
 
 // Calors---------------------------------------------------------------
 $white: #ffffff;
