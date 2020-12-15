@@ -5,3 +5,18 @@
 .header__container {
   background-color: $white;
 }
+
+//---main-nav---главная навигация
+.main-nav__list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

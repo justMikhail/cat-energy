@@ -1,20 +1,23 @@
 
 // Normolize------------------------------------------------------------------------------
-@import "./global/normalize.scss";
+@import "./common/normalize.scss";
 
 // Fonts----------------------------------------------------------------------------------
-@import "./global/fonts.scss";
+@import "./common/fonts.scss";
 
 // Variables------------------------------------------------------------------------------
-@import "./global/variables.scss";
+@import "./common/variables.scss";
 
-// Global---------------------------------------------------------------------------------
-@import "./global/global.scss";
+// Mixins---------------------------------------------------------------------------------
+@import "./common/mixins.scss";
+
+// Common---------------------------------------------------------------------------------
+@import "./common/common.scss";
 
 // Container
-@import "./blocks/container.scss";
+@import "./common/container.scss";
 // Main-button
-@import "./global/main-button.scss";
+@import "./common/main-button.scss";
 
 // Blocks---------------------------------------------------------------------------------
 
