@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -7,3 +13,30 @@ a {
   text-decoration: none;
   outline: none;
 }
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

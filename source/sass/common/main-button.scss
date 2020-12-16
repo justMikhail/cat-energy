@@ -1,7 +1,10 @@
 .main-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  min-height: 40px;
+  padding: 10px 5px;
+
 
   background-color: $basic-green;
   color: $white;

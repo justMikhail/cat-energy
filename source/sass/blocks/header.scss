@@ -4,11 +4,19 @@
 
 .header__container {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
 }
 
 //---main-nav---главная навигация
 .main-nav__list {
   @include list-reset;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,6 +25,7 @@
 
 .main-nav__burger {
   @media (min-width: $tablet-width) {
-    display: none;
+    background-color: red;
   }
 }
+

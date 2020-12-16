@@ -1,6 +1,6 @@
 // Adaptive-Responsive Design (Основная сетка)-------------------------------------------------
 .container {
-  box-sizing: border-box;
+  width: 100%;
   min-width: $mobile-width;
   max-width: $max-mobile-width;
   padding: 0 20px;
