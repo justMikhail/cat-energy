@@ -16,37 +16,89 @@
   min-height: 66px;
 }
 
-.main-nav__burger {
-  @include button-reset;
-}
-
 // logo
 .logo__text {
   flex: 1 1 auto;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__icon {
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 // logo
 
 // burger
 .burger {
+  @include button-reset;
   width: 25px;
   height: 25px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--closed {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    }
+  }
+
+  &--opened {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
-.burger--closed {
-  position: relative;
-}
-
-.burger--closed::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 24px;
-  height: 2px;
-
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-}
 // burger
 
 //---main-nav---
@@ -76,3 +128,7 @@
   font-weight: 500;
 }
 //---main-nav---
+
+.contacts__map-iframe {
+  width: 100%;
+}

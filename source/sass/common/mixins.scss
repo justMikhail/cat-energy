@@ -4,10 +4,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 @mixin button-reset {
@@ -17,4 +13,8 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
