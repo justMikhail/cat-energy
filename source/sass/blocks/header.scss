@@ -12,9 +12,13 @@
 // logo
 .logo {
   display: flex;
+  align-items: center;
   flex: 1 1 auto;
 }
 
+.logo__text {
+  flex: 1 1 auto;
+}
 // logo
 
 // burger
