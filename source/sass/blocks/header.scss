@@ -3,29 +3,49 @@
 }
 
 .header__container {
-  background-color: $white;
+  background-color: $basic-gray;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 68px;
 }
 
-.header__top {
+// logo
+.logo {
   display: flex;
+  flex: 1 1 auto;
 }
 
-//---main-nav---главная навигация
+// logo
+
+// burger
+.main-nav__burger {
+
+}
+// burger
+
+//---main-nav---
+.main-nav {
+  flex: 0 1 100%;
+}
+
 .main-nav__list {
   @include list-reset;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-.main-nav__burger {
-  @media (min-width: $tablet-width) {
-    background-color: red;
-  }
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  color: $black;
+  text-transform: uppercase;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
-
+//---main-nav---
