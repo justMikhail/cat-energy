@@ -14,18 +14,21 @@
   align-items: center;
   flex: 1 1 auto;
   min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 auto;
+  }
 }
 
 // logo
-.logo__text {
-  flex: 1 1 auto;
-  transition-duration: 0.3s;
-
-  &:hover {
+.logo {
+  &:hover .logo__icon,
+  &:hover .logo__text {
     opacity: 0.8;
   }
 
-  &:active {
+  &:active .logo__icon,
+  &:active .logo__text {
     opacity: 0.6;
   }
 }
@@ -33,12 +36,17 @@
 .logo__icon {
   transition-duration: 0.3s;
 
-  &:hover {
-    opacity: 0.8;
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
   }
+}
 
-  &:active {
-    opacity: 0.6;
+.logo__text {
+  flex: 1 1 auto;
+  transition-duration: 0.3s;
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 auto;
   }
 }
 // logo
@@ -46,6 +54,8 @@
 // burger
 .burger {
   @include button-reset;
+
+  display: none;
   width: 25px;
   height: 25px;
   transition-duration: 0.3s;
@@ -97,6 +107,10 @@
       transform: rotate(-45deg);
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 // burger
@@ -104,7 +118,25 @@
 //---main-nav---
 .main-nav {
   flex: 0 1 100%;
-  background-color: $basic-gray;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex: 1 0 auto;
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__list {
@@ -112,6 +144,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -119,13 +152,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
-  color: $black;
-  text-transform: uppercase;
-  // fonts
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  padding: 22px 0 23px 0;
+
+  a {
+    color: $black;
+    text-transform: uppercase;
+    // fonts
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $basic-gray-4;
+
+    &:last-child {
+      border-bottom: 1px solid $basic-gray-4;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 37px;
+  }
 }
 //---main-nav---
 
