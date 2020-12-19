@@ -41,16 +41,11 @@
 }
 
 // social
-.social {
-}
-
 .social__list {
   @include list-reset;
 
   display: flex;
   flex-wrap: wrap;
-}
-.social__item {
 }
 
 .social__link {
