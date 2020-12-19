@@ -22,12 +22,14 @@
 // Blocks---------------------------------------------------------------------------------
 
 // Common blocks
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
 // Index
 @import "./blocks/programs.scss";
 @import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
 
 // Catalog
 

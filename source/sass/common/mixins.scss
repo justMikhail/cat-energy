@@ -5,3 +5,16 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin button-reset {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
