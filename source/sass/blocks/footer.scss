@@ -65,6 +65,14 @@
   &:active .social__icon path {
     fill: rgba($basic-green, 0.7%);
   }
+
+  &:hover .social__icon--stroke path {
+    stroke: $basic-green;
+  }
+
+  &:active .social__icon--stroke path {
+    stroke: rgba($basic-green, 0.7%);
+  }
 }
 
 // copyright
