@@ -53,25 +53,27 @@
   align-items: center;
   min-height: 50px;
   padding: 0 17.5px;
+}
 
-  .social__icon {
-    transition-duration: 0.3s;
-  }
+.social__icon {
+  transition-duration: 0.3s;
 
-  &:hover .social__icon path {
+  &:hover path {
     fill: $basic-green;
   }
 
-  &:active .social__icon path {
+  &:active path {
     fill: rgba($basic-green, 0.7%);
   }
 
-  &:hover .social__icon--stroke path {
-    stroke: $basic-green;
-  }
+  &--stroke {
+    &:hover path {
+      stroke: $basic-green;
+    }
 
-  &:active .social__icon--stroke path {
-    stroke: rgba($basic-green, 0.7%);
+    &:active path {
+      stroke: rgba($basic-green, 0.7%);
+    }
   }
 }
 
@@ -81,7 +83,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition-duration: 0.3s;
 
   &:hover .copyright__icon path {
     fill: $basic-green;
