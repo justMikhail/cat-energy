@@ -70,7 +70,7 @@
 
   &--stroke {
     path {
-      transition: fill 0.2s linear;
+      transition: stroke 0.2s linear;
     }
 
     &:hover path {
@@ -104,8 +104,8 @@
 }
 
 .copyright__text {
+  transition: opacity 0.2s linear;
   color: $spac-dark-grey;
-  transition-duration: 0.3s;
   // fonts
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -119,5 +119,7 @@
 }
 
 .copyright__icon {
-  transition-duration: 0.3s;
+  path {
+    transition: fill 0.2s linear;
+  }
 }

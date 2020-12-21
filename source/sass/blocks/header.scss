@@ -34,7 +34,7 @@
 }
 
 .logo__icon {
-  transition-duration: 0.3s;
+  transition: opacity 0.2s linear;
 
   @media (min-width: $tablet-width) {
     margin-right: 14px;
@@ -43,7 +43,7 @@
 
 .logo__text {
   flex: 1 1 auto;
-  transition-duration: 0.3s;
+  transition: opacity 0.2s linear;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 auto;
@@ -58,7 +58,7 @@
   display: none;
   width: 25px;
   height: 25px;
-  transition-duration: 0.3s;
+  transition: opacity 0.2s linear;
 
   &:hover {
     opacity: 0.8;
