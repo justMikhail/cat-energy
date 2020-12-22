@@ -121,7 +121,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 0 23px 0;
 
   a {
     color: $black;
@@ -134,10 +133,13 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $basic-gray-4;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 22px 20px 23px 20px;
+    border-top: 1px solid $basic-grey-4;
 
     &:last-child {
-      border-bottom: 1px solid $basic-gray-4;
+      border-bottom: 1px solid $basic-grey-4;
     }
   }
 
