@@ -20,37 +20,6 @@
   }
 }
 
-// logo
-.logo {
-  &:hover .logo__icon,
-  &:hover .logo__text {
-    opacity: 0.8;
-  }
-
-  &:active .logo__icon,
-  &:active .logo__text {
-    opacity: 0.6;
-  }
-}
-
-.logo__icon {
-  transition: opacity 0.2s linear;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 14px;
-  }
-}
-
-.logo__text {
-  flex: 1 1 auto;
-  transition: opacity 0.2s linear;
-
-  @media (min-width: $tablet-width) {
-    flex: 0 0 auto;
-  }
-}
-// logo
-
 // burger
 .burger {
   @include button-reset;

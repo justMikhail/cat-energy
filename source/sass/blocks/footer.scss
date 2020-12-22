@@ -65,7 +65,7 @@
   }
 
   &:active path {
-    fill: rgba($basic-green, 0.7%);
+    fill: $basic-green-alfa-07;
   }
 
   &--stroke {
@@ -78,7 +78,7 @@
     }
 
     &:active path {
-      stroke: rgba($basic-green, 0.7%);
+      stroke: $basic-green-alfa-07;
     }
   }
 }
@@ -95,7 +95,7 @@
   }
 
   &:active .copyright__icon path {
-    fill: rgba($basic-green, 0.7%);
+    fill: $basic-green-alfa-07;
   }
 
   &:active .copyright__text {
