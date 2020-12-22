@@ -20,37 +20,6 @@
   }
 }
 
-// logo
-.logo {
-  &:hover .logo__icon,
-  &:hover .logo__text {
-    opacity: 0.8;
-  }
-
-  &:active .logo__icon,
-  &:active .logo__text {
-    opacity: 0.6;
-  }
-}
-
-.logo__icon {
-  transition-duration: 0.3s;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 14px;
-  }
-}
-
-.logo__text {
-  flex: 1 1 auto;
-  transition-duration: 0.3s;
-
-  @media (min-width: $tablet-width) {
-    flex: 0 0 auto;
-  }
-}
-// logo
-
 // burger
 .burger {
   @include button-reset;
@@ -58,7 +27,7 @@
   display: none;
   width: 25px;
   height: 25px;
-  transition-duration: 0.3s;
+  transition: opacity 0.2s linear;
 
   &:hover {
     opacity: 0.8;
@@ -152,7 +121,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 0 23px 0;
 
   a {
     color: $black;
@@ -165,10 +133,13 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $basic-gray-4;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 22px 20px 23px 20px;
+    border-top: 1px solid $basic-grey-4;
 
     &:last-child {
-      border-bottom: 1px solid $basic-gray-4;
+      border-bottom: 1px solid $basic-grey-4;
     }
   }
 

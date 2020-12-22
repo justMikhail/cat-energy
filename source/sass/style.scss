@@ -16,8 +16,6 @@
 
 // Container
 @import "./common/container.scss";
-// Main-button
-@import "./common/main-button.scss";
 
 // Blocks---------------------------------------------------------------------------------
 
@@ -26,12 +24,16 @@
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
+// Any page (Independent of the page)
+@import "./blocks/logo.scss";
+@import "./blocks/main-button.scss";
+
 // Index
 @import "./blocks/programs.scss";
 @import "./blocks/example.scss";
 @import "./blocks/contacts.scss";
 
 // Catalog
-
+@import "./blocks/catalog.scss";
 
 // Form
