@@ -67,20 +67,6 @@
   &:active path {
     fill: $basic-green-alfa-07;
   }
-
-  &--stroke {
-    path {
-      transition: stroke 0.2s linear;
-    }
-
-    &:hover path {
-      stroke: $basic-green;
-    }
-
-    &:active path {
-      stroke: $basic-green-alfa-07;
-    }
-  }
 }
 
 // copyright
