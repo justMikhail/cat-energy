@@ -11,10 +11,10 @@
     <header class="page__header header">
       <div class="header__container container">
         <a class="header__logo logo" href="index.html">
-          <picture class="logo__icon">
+          <picture>
             <source srcset="./img/logo/logo-desktop.svg" media="(min-width: 1300px)" type="image/svg+xml">
             <source srcset="./img/logo/logo-tablet.svg" media="(min-width: 768px)" type="image/svg+xml">
-            <img src="./img/logo/logo-mobile.svg" alt="Логотип Cat Energy">
+            <img class="logo__icon" src="./img/logo/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
           <svg class="logo__text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -53,7 +53,11 @@
           <div class="promo__container container">
             <h1 class="promo__title">Функциональное питание для котов</h1>
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-            <img src="https://via.placeholder.com/280x270" width="280" height="270" alt="промо-изображение">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/promo/index_promo_product_desktop.png, ./img/promo/index_promo_product_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/promo/index_promo_product_tablet.jpg, ./img/promo/index_promo_product_tablet.jpg 2x">
+              <img class="promo__img" src="./img/promo/index_promo_product.png" srcset="./img/promo/index_promo_product@2x.png 2x" width="280" height="270" alt="Промо продукт">
+            </picture>
             <a class="promo__button main-button" href="form.html">Подобрать программу</a>
           </div>
         </section>

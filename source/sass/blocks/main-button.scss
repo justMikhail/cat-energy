@@ -1,11 +1,12 @@
 .main-button {
+  @include button-reset;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 5px;
 
   transition: all 0.2s linear;
-  background-color: $basic-green;
+  background-color: $primary-green-500;
   color: $white;
   text-transform: uppercase;
   //Fonts
@@ -16,7 +17,7 @@
   line-height: 18px;
 
   &:hover {
-    background-color: $darker-green;
+    background-color: $primary-green-700;
   }
 
   &:active {

@@ -13,6 +13,7 @@ $max-desktop-width: 1300px;
 $white: #ffffff;
 $black: #000000;
 
+$white-opacity-00: rgba(100, 100, 100, 0);
 $white-opacity-02: rgba(255, 255, 255, 0.2);
 
 $basic-grey: #f2f2f2;
@@ -21,6 +22,6 @@ $basic-grey-3: #d9d9d9;
 $basic-grey-4: #e6e6e6;
 $spac-dark-grey: #444444;
 
-$basic-green: #68b738;
-$basic-green-alfa-07: rgba(104, 183, 56, 0.7);
-$darker-green: #5eaa2f;
+$primary-green-500: #68b738;
+$primary-green-500-07: rgba(104, 183, 56, 0.7);
+$primary-green-700: #5eaa2f;
