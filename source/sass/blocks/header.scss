@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   flex: 1 1 auto;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 auto;
@@ -90,8 +91,6 @@
   }
 }
 
-// burger
-
 //---main-nav---
 .main-nav {
   flex: 0 1 100%;
@@ -133,9 +132,10 @@
   justify-content: center;
 
   @media (max-width: $mobile-width-only) {
+    min-height: 66px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding: 22px 20px 23px 20px;
+    padding: 13px 20px 13px 20px;
     border-top: 1px solid $basic-grey-4;
 
     &:last-child {
@@ -153,8 +153,8 @@
 }
 
 .main-nav__link {
-  z-index: 2;
-  min-height: 40px;
+  display: flex;
+  align-items: center;
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
@@ -165,6 +165,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    min-height: 40px;
     background-image: linear-gradient($primary-green-500, $primary-green-500);
     background-position: 20% 100%;
     background-repeat: no-repeat;
