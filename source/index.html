@@ -51,13 +51,19 @@
     <main class="page__main main">
         <section class="main__promo promo">
           <div class="promo__container container">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
+            <h1 class="promo__title">Функциональное<br> питание для котов</h1>
             <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-            <picture>
-              <source media="(min-width: 1300px)" srcset="./img/promo/index_promo_product_desktop.png, ./img/promo/index_promo_product_desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="./img/promo/index_promo_product_tablet.jpg, ./img/promo/index_promo_product_tablet.jpg 2x">
-              <img class="promo__img" src="./img/promo/index_promo_product.png" srcset="./img/promo/index_promo_product@2x.png 2x" width="280" height="270" alt="Промо продукт">
-            </picture>
+          <div class="promo__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="./img/promo/index_promo_product_desktop.webp 1x, ./img/promo/index_promo_product_desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/promo/index_promo_product_tablet.webp 1x, ./img/promo/index_promo_product_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/promo/index_promo_product.webp 1x, ./img/promo/index_promo_product@2x.webp 2x">
+
+                <source media="(min-width: 1300px)" srcset="./img/promo/index_promo_product_desktop.png, ./img/promo/index_promo_product_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/promo/index_promo_product_tablet.jpg, ./img/promo/index_promo_product_tablet.jpg 2x">
+                <img src="./img/promo/index_promo_product.png" srcset="./img/promo/index_promo_product@2x.png 2x" width="280" height="270" alt="Промо продукт">
+              </picture>
+            </div>
             <a class="promo__button main-button" href="form.html">Подобрать программу</a>
           </div>
         </section>

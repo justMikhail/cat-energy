@@ -29,3 +29,8 @@
 
 .features__text--1 {
 }
+
+.example {
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
+}
