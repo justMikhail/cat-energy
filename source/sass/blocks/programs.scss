@@ -1,4 +1,5 @@
 .main__programs {
+  margin-bottom: 27px;
 }
 
 // programs
@@ -22,8 +23,7 @@
     column-gap: 80px;
   }
 }
-.programs__item {
-}
+
 .programs__card {
   background-color: $basic-grey;
 }
@@ -31,27 +31,35 @@
 
 // program-card
 .program-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "img title" "text text" "link link";
+  grid-template-columns: 50px 1fr;
+  grid-gap: 20px;
   padding: 20px 20px 0 20px;
   min-height: 266px;
 
   @media (min-width: $tablet-width) {
+    grid-template-areas: "title img" "text img" "link img";
+    grid-template-columns: 1fr 200px;
     min-height: 372px;
+    padding: 20px 59px 0 54px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-areas: "img title" "text text" "link link";
+    grid-template-columns: 100px 1fr;
     min-height: 374px;
   }
 }
 
 .program-card__title {
-  position: relative;
+  grid-area: title;
   display: flex;
   align-items: center;
-  padding: 0 0 0 71px;
+  padding: 0;
   margin: 0;
-  min-height: 55px;
+  text-transform: uppercase;
   // fonts
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -60,80 +68,64 @@
   line-height: 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     // fonts
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 214px;
-    min-height: 132px;
   }
 }
 
-.program-card__title--slim {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 50px;
-    height: 53px;
-    margin-right: 15px;
+.program-card__img {
+  grid-area: img;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: $primary-500;
+  border-radius: 50%;
 
-    background-image: url("../../img/icons/programs/cat_slim.svg");
-    background-repeat: no-repeat;
-    background-position: 0 50%;
-    background-size: cover;
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+  }
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 100px;
-      height: 106px;
-      margin-right: 62px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
   }
 }
 
-.program-card__title--pro {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -7px;
-    width: 67px;
-    height: 50px;
-    margin-right: 11px;
+.program-card__img-slim {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 192px;
+  }
 
-    background-image: url("../../img/icons/programs/cat_pro.svg");
-    background-repeat: no-repeat;
-    background-position: 0 50%;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+.program-card__img-pro {
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 134px;
-      height: 100px;
-      margin-right: 47px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
   }
 }
 
 .program-card__text {
+  grid-area: text;
   padding: 0;
   margin: 0;
-  flex: 1 1 auto;
   display: flex;
   align-items: center;
   // fonts
@@ -151,6 +143,7 @@
 }
 
 .program-card__link {
+  grid-area: link;
   display: flex;
   align-items: center;
   min-height: 57px;

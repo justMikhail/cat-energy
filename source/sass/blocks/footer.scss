@@ -61,11 +61,11 @@
   }
 
   &:hover path {
-    fill: $primary-green-500;
+    fill: $primary-500;
   }
 
   &:active path {
-    fill: $primary-green-500-07;
+    fill: $primary-500-07;
   }
 }
 
@@ -77,11 +77,11 @@
   align-items: center;
 
   &:hover .copyright__icon path {
-    fill: $primary-green-500;
+    fill: $primary-500;
   }
 
   &:active .copyright__icon path {
-    fill: $primary-green-500-07;
+    fill: $primary-500-07;
   }
 
   &:active .copyright__text {

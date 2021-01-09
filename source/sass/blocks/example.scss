@@ -1,7 +1,123 @@
+.main__example {
+}
+// example
 .example {
   background-color: $basic-grey-2;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+.example__container {
+}
+.container {
+}
+.example__title {
+}
+.example__text {
+  // fonts
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.example__container {
-  background-color: $basic-grey-2;
+.example__data {
+  display: grid;
+  grid-template-areas: "a b" "c c";
+  justify-items: center;
+  grid-gap: 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "a b c";
+  }
+}
+
+.example__result-data {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid $basic-5;
+  text-align: center;
+  min-width: 124px;
+  min-height: 64px;
+
+  h3 {
+    text-transform: uppercase;
+    // fonts
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  p {
+    position: absolute;
+    top: 100%;
+    margin-top: -15px;
+    background-color: $basic-grey-2;
+    width: 70%;
+    left: 15%;
+    //fonts
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+
+    @media (min-width: $tablet-width) {
+      background-color: $white;
+    }
+  }
+
+  &--1 {
+    grid-area: a;
+  }
+
+  &--2 {
+    grid-area: b;
+  }
+}
+.example__cost {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  // fonts
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.example__price {
+}
+.example__slider {
+}
+
+// example-slider
+.example-slider {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+.example-slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.example-slider__img--background {
+  background-image: url("../../img/example/cat-fat.png");
+}
+
+.example-slider__img--foreground {
+  background-image: url("../../img/example/cat-skinny.png");
+  width: 50%;
+}
+
+.example-slider__range {
+}
+.example-slider__button {
 }
