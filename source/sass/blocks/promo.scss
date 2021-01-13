@@ -1,0 +1,165 @@
+.promo {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 38%;
+    right: 0;
+    background-image: url("../../img/promo/index_promo_bg_mobile.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+    @media (min-width: $tablet-width) {
+      background-image: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/promo/index_promo_bg_desktop.jpg");
+      top: -$header-desktop-height;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 38%;
+    right: 0;
+    background-color: $primary-500;
+    opacity: 0.7;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $primary-500;
+      opacity: 0.7;
+      top: -$header-desktop-height;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    height: 850px;
+    padding: 0 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    height: 546px;
+    padding: 0 120px;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  padding: 25px 0;
+  color: $white;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    order: 1;
+    // fonts
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.promo__subtitle {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $white;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    order: 2;
+    margin-bottom: 49px;
+    // fonts
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.promo__img {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: -1;
+
+  img {
+    object-fit: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+
+    img {
+      min-width: 709px;
+      min-height: 609px;
+      margin: -90px 0 0 -100px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 100%;
+
+    img {
+      min-width: 552px;
+      min-height: 499px;
+      margin: 0 0 0 -180px;
+    }
+  }
+}
+
+.promo__button {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    // fonts
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

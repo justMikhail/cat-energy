@@ -1,9 +1,72 @@
 .page__body {
   min-height: 100vh;
-  // Grid сетка страницы
   box-sizing: border-box;
   // Grid сетка страницы
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+}
+
+.page__header {
+  margin-bottom: 0;
+}
+
+.page__main {
+  margin-bottom: 0;
+}
+
+.page__promo {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.page__programs {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.page__features {
+  margin-bottom: 40px;
+}
+
+.page__example {
+  margin-bottom: 0;
+}
+
+.page__contacts {
+  margin: 0;
+}
+
+.page__footer {
+  margin-bottom: 0;
+}
+
+// Titles
+.page__subtitle {
+  margin: 0;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

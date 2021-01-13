@@ -12,10 +12,10 @@
   <header class="page__header header">
     <div class="header__container container">
       <a class="header__logo logo" href="index.html">
-        <picture class="logo__icon">
+        <picture>
           <source srcset="./img/logo/logo-desktop.svg" media="(min-width: 1300px)" type="image/svg+xml">
           <source srcset="./img/logo/logo-tablet.svg" media="(min-width: 768px)" type="image/svg+xml">
-          <img src="./img/logo/logo-mobile.svg" alt="Логотип Cat Energy">
+          <img class="logo__icon" src="./img/logo/logo-mobile.svg" alt="Логотип Cat Energy">
         </picture>
         <svg class="logo__text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
@@ -36,10 +36,10 @@
           </defs>
         </svg>
       </a>
-      <button class="header__burger burger burger--opened" type="button">
+      <button class="header__burger burger burger--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
@@ -417,6 +417,8 @@
       </section>
     </div>
   </footer>
+
+  <script src="./js/menu-burger.js"></script>
 
 </body>
 </html>

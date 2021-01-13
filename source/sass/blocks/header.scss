@@ -1,12 +1,20 @@
 .header {
-  background-color: $white;
+  background-color: $white-opacity-00;
 }
 
 .header__container {
   display: flex;
   flex-wrap: wrap;
-  min-height: 68px;
   align-items: center;
+  min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 150px;
+  }
 }
 
 .header__logo {
@@ -27,7 +35,6 @@
   display: none;
   width: 25px;
   height: 25px;
-  transition: opacity 0.2s linear;
 
   &:hover {
     opacity: 0.8;
@@ -47,6 +54,7 @@
       left: 0;
       width: 24px;
       height: 2px;
+      transition: all 0.3s ease 0s;
 
       background-color: $black;
       box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
@@ -64,6 +72,7 @@
       left: 0;
       width: 24px;
       height: 2px;
+      transition: all 0.3s ease 0s;
 
       background-color: $black;
     }
@@ -82,14 +91,14 @@
   }
 }
 
-// burger
-
 //---main-nav---
 .main-nav {
   flex: 0 1 100%;
 
   &--closed {
-    display: none;
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 
   &--opened {
@@ -122,24 +131,15 @@
   align-items: center;
   justify-content: center;
 
-  a {
-    color: $black;
-    text-transform: uppercase;
-    // fonts
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-  }
-
   @media (max-width: $mobile-width-only) {
+    min-height: 66px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding: 22px 20px 23px 20px;
-    border-top: 1px solid $basic-grey-4;
+    padding: 13px 20px 13px 20px;
+    border-top: 1px solid $basic-300;
 
     &:last-child {
-      border-bottom: 1px solid $basic-grey-4;
+      border-bottom: 1px solid $basic-300;
     }
   }
 
@@ -149,6 +149,38 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 37px;
+  }
+}
+
+.main-nav__link {
+  display: flex;
+  align-items: center;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+    background-image: linear-gradient($primary-500, $primary-500);
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    background-image: linear-gradient($white, $white);
   }
 }
 //---main-nav---

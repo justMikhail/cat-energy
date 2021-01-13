@@ -1,6 +1,6 @@
 // footer
 .footer {
-  background-color: $basic-grey;
+  background-color: $basic-500;
 }
 
 .footer__container {
@@ -29,8 +29,8 @@
   min-height: 63px;
 
   @media (max-width: $mobile-width-only) {
-    border-top: 1px solid $basic-grey-3;
-    border-bottom: 1px solid $basic-grey-3;
+    border-top: 1px solid $basic-200;
+    border-bottom: 1px solid $basic-200;
   }
 }
 
@@ -61,11 +61,11 @@
   }
 
   &:hover path {
-    fill: $basic-green;
+    fill: $primary-500;
   }
 
   &:active path {
-    fill: $basic-green-alfa-07;
+    fill: $primary-500-07;
   }
 }
 
@@ -77,11 +77,11 @@
   align-items: center;
 
   &:hover .copyright__icon path {
-    fill: $basic-green;
+    fill: $primary-500;
   }
 
   &:active .copyright__icon path {
-    fill: $basic-green-alfa-07;
+    fill: $primary-500-07;
   }
 
   &:active .copyright__text {
@@ -91,7 +91,7 @@
 
 .copyright__text {
   transition: opacity 0.2s linear;
-  color: $spac-dark-grey;
+  color: $basic-900;
   // fonts
   font-family: "Arial", sans-serif;
   font-style: normal;
