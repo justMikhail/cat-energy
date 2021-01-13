@@ -1,0 +1,44 @@
+.example-data {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.example-data__key {
+  position: relative;
+  z-index: 1;
+  background-color: inherit;
+  align-self: center;
+  max-width: calc(100% - 68px);
+  margin: -10px 0 0 0;
+  padding: 0 15px;
+  line-height: 1;
+  text-transform: lowercase;
+  // fonts
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    max-width: calc(100% - 20px);
+    padding: 0 8px;
+    // fonts
+    font-size: 14px;
+  }
+}
+
+.example-data__value {
+  margin: 0;
+  padding: 15px 20px;
+  line-height: 1;
+  color: $black;
+  text-transform: uppercase;
+  border: 1px solid $basic-100;
+  border-radius: 5px;
+  // fonts
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    // fonts
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
