@@ -10,6 +10,7 @@
 }
 
 .example__container {
+  background-color: inherit;
 }
 
 .example__title {
@@ -21,18 +22,14 @@
 
 .example__content {
   background-color: inherit;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 40px 30px;
+    padding: 0 0 40px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 7px;
-    padding-bottom: 72px;
     background-color: $basic-400;
+    padding: 7px 0 72px 0;
   }
 }
 
@@ -46,6 +43,8 @@
 }
 
 .example__description {
+  background-color: inherit;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
     padding-right: 20px;
@@ -74,8 +73,8 @@
 }
 
 .example__data {
-  width: calc(50% - 16px);
   background-color: inherit;
+  width: calc(50% - 16px);
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {

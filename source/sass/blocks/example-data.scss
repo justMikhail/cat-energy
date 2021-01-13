@@ -1,13 +1,14 @@
 .example-data {
+  background-color: inherit;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
 }
 
 .example-data__key {
+  background-color: inherit;
   position: relative;
   z-index: 1;
-  background-color: inherit;
   align-self: center;
   max-width: calc(100% - 68px);
   margin: -10px 0 0 0;
@@ -26,6 +27,7 @@
 }
 
 .example-data__value {
+  background-color: inherit;
   margin: 0;
   padding: 15px 20px;
   line-height: 1;
