@@ -39,8 +39,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css")) // sryle.css --> style.mon.css
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -156,7 +156,8 @@ const build = gulp.series(
     copy,
     images,
     createWebp
-  ));
+  )
+);
 
 exports.build = build;
 
