@@ -5,7 +5,7 @@
   const mainNavBurger = document.querySelector('.header__burger');
 
   mainNav.classList.remove('main-nav--nojs');
-  mainNav.setAttribute('aria-hidden', true); // доступность (не закончена)
+  mainNav.setAttribute('aria-hidden', true);
 
   console.log("работает");
 
