@@ -56,15 +56,14 @@
 }
 
 .social__icon {
-  path {
-    transition: fill 0.2s linear;
-  }
+  fill: $basic-spec-3;
+  transition: fill 0.2s linear;
 
-  &:hover path {
+  &:hover {
     fill: $primary-500;
   }
 
-  &:active path {
+  &:active {
     fill: $primary-500-07;
   }
 }
@@ -76,11 +75,11 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover .copyright__icon path {
+  &:hover .copyright__icon {
     fill: $primary-500;
   }
 
-  &:active .copyright__icon path {
+  &:active .copyright__icon {
     fill: $primary-500-07;
   }
 
@@ -105,7 +104,7 @@
 }
 
 .copyright__icon {
-  path {
-    transition: fill 0.2s linear;
-  }
+  fill: $basic-spec-3;
+  transition: fill 0.2s linear;
 }
+

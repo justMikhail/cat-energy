@@ -11,6 +11,7 @@ const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const cheerio = require('gulp-cheerio');
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -78,7 +79,8 @@ exports.copy = copy;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp
+    .src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({
         quality: 80,
@@ -105,10 +107,18 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/**/*.svg")
+  return gulp
+    .src("source/img/icons/**/*.svg")
     .pipe(svgstore())
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;
