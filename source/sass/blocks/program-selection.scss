@@ -1,0 +1,41 @@
+.program-selection {
+}
+
+.program-selection__container {
+}
+
+.program-selection__title {
+  padding: 27px 0 37px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 41px 0 54px 0;
+  }
+}
+
+.program-selection__subtitle {
+  max-width: 226px;
+  margin: 0;
+  // fonts
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 323px;
+    // fonts
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-selection__form {
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+}

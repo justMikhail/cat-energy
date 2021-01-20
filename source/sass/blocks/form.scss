@@ -1,0 +1,131 @@
+.form {
+}
+
+// form__main-info
+.form__main-info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset {
+  @include fieldset-reset;
+
+  legend {
+    @include legend-reset;
+  }
+}
+
+.form__cat-data {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 47%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.form__program-type {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    border-top: 1px solid $basic-300;
+    border-bottom: 1px solid $basic-300;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-300;
+    padding: 25px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 47%;
+    margin-right: 0;
+  }
+}
+
+.form__list {
+  @include list-reset;
+  width: 100%;
+}
+
+.form__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  height: 46px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.form__label {
+  flex: 0 0 auto;
+  margin-right: 14px;
+}
+
+.form__text-input {
+  flex: 1 0 auto;
+  height: 100%;
+  border: 1px solid $basic-300;
+  padding: 5px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 19  px;
+  }
+}
+
+.form__radio-button {
+}
+
+// form__customers-contact
+.form__customers-contact {
+}
+
+.form__subtitle {
+  position: relative;
+  padding: 0;
+  margin: 0 -20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid $primary-500;
+    width: 200vw;
+    top: 12px;
+    left: -100vw;
+  }
+}
+
+.form__subtitle-text {
+  position: relative;
+  background: $white;
+  padding: 0 20px;
+  margin: 0;
+  z-index: 2;
+}
