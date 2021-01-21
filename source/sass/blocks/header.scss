@@ -1,5 +1,9 @@
 .header {
   background-color: $white-opacity-00;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-300;
+  }
 }
 
 .header__container {
@@ -55,7 +59,6 @@
       width: 24px;
       height: 2px;
       transition: all 0.3s ease 0s;
-
       background-color: $black;
       box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
     }
@@ -73,7 +76,6 @@
       width: 24px;
       height: 2px;
       transition: all 0.3s ease 0s;
-
       background-color: $black;
     }
 
@@ -162,6 +164,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
+  font-size: 20px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
@@ -171,16 +174,38 @@
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.3s;
+    //fonts
+    font-size: 18px;
+    line-height: 24px;
 
     &:hover,
     &:focus {
       background-size: 100% 2px;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      @media (min-width: $tablet-width) {
+        background-image: $primary-500;
+        background-size: 100% 2px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    color: $white;
-    background-image: linear-gradient($white, $white);
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+      background-image: linear-gradient($white, $white);
+    }
   }
 }
 //---main-nav---

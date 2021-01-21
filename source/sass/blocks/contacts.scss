@@ -1,4 +1,13 @@
 .contacts {
+  background-color: $basic-500;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+
+  &--index {
+    background-color: $white;
+  }
 }
 
 .contacts__container {
