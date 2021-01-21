@@ -164,6 +164,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
+  font-size: 20px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
@@ -173,11 +174,31 @@
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.3s;
+    //fonts
+    font-size: 18px;
+    line-height: 24px;
 
     &:hover,
     &:focus {
       background-size: 100% 2px;
+      opacity: 0.6;
     }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      @media (min-width: $tablet-width) {
+        background-image: $primary-500;
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &--index {

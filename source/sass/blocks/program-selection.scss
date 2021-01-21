@@ -1,21 +1,26 @@
 .program-selection {
 }
 
-.program-selection__container {
-}
-
 .program-selection__title {
-  padding: 27px 0 37px 0;
-  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 41px 0 54px 0;
+    padding: 0 30px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .program-selection__subtitle {
   max-width: 226px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 39px;
+  text-transform: uppercase;
   // fonts
   font-weight: 400;
   font-style: normal;
@@ -23,19 +28,30 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    min-width: 323px;
+    max-width: 383px;
+    padding: 0 30px;
+    margin-bottom: 66px;
     // fonts
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    max-width: 323px;
+  }
 }
 
 .program-selection__form {
-  padding-top: 39px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
