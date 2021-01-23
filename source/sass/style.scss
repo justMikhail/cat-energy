@@ -20,8 +20,14 @@
 
 // Common blocks
 @import "./blocks/page.scss";
+
+//header
 @import "./blocks/header.scss";
+
+// footer
 @import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
 
 // Any page
 @import "./blocks/logo.scss";
