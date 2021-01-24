@@ -104,11 +104,11 @@
           </div>
 
           <fieldset class="form__fieldset form__customers-contact">
-              <legend class="form__subtitle form__subtitle--customers-contact page__title-type-2">
-                <p class="form__subtitle-text">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
+              <legend class="title-decor form__customers-contact-title">
+                <p class="title-decor__text">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
               </legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--customers-contact">
+                <li class="form__item form__item--customers-contact">
                   <label class="form__input" for="customers-email">
                     <span class="form__label">E-mail*:</span>
                     <input class="form__text-input" type="email" id="customers-email" name="customers-email" placeholder="kuklachev@gmail.com" required>
@@ -116,8 +116,8 @@
                       <use xlink:href="./img/icons/sprite.svg#icon_email"></use>
                     </svg>
                   </label>
-                </li class="form__item">
-                <li>
+                </li>
+                <li class="form__item form__item--customers-contact">
                   <label class="form__input" for="customers-tel">
                     <span class="form__label">Телефон:*</span>
                     <input class="form__text-input" type="tel" id="customers-tel" name="customers-tel" placeholder="8 (960) 900-60-90" required>
@@ -130,15 +130,15 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__customers-comment">
-              <legend class="form__subtitle form__subtitle--customer-comment page__title-type-2">
-                <label class="form__subtitle-text" for="comment">Комментарий</label>
+              <legend class="title-decor form__customers-comment-title">
+                <label for="comment"><span class="title-decor__text">Комментарий</span></label>
               </legend>
               <textarea class="form__textaria" id="comment" name="comment" rows="7" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__additional">
-              <legend class="form__subtitle form__subtitle--additional page__title-type-2">
-                <p class="form__subtitle-text">Дополнительно</p>
+              <legend class="title-decor form__additional-title">
+                <p class="title-decor__text">Дополнительно</p>
               </legend>
               <ul class="form__list">
                 <div class="form__checkboxes-wrapper">
@@ -227,7 +227,7 @@
           <li>
             <a class="social__link" href="https://vk.com">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="social__icon" width="23" height="16">
+              <svg class="social__icon social__icon--vk" width="23" height="16">
                 <use xlink:href="./img/icons/sprite.svg#icon_vk"></use>
               </svg>
             </a>
@@ -235,7 +235,7 @@
           <li>
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg class="social__icon" width="16" height="16">
+              <svg class="social__icon social__icon--instagram" width="16" height="16">
                 <use xlink:href="./img/icons/sprite.svg#icon_instagram"></use>
               </svg>
             </a>
@@ -243,7 +243,7 @@
           <li>
             <a class="social__link" href="https://www.facebook.com/">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social__icon" width="13" height="20">
+              <svg class="social__icon social__icon--fb" width="13" height="20">
                 <use xlink:href="./img/icons/sprite.svg#icon_facebook"></use>
               </svg>
             </a>

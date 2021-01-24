@@ -1,0 +1,128 @@
+.extra-product-card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $basic-100;
+  padding: 13px 0 19px 0;
+
+  &:first-child {
+    border-top: 1px solid $basic-100;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid $basic-100;
+    border-left: 1px solid $basic-100;
+    padding: 26px 38px 28px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    border-right: none;
+    border-left: none;
+    width: 896px;
+    padding: 15px 0 17px 0;
+  }
+}
+
+.extra-product-card__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  //fonts
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    // fonts
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 325px;
+    margin-bottom: 0;
+  }
+}
+
+.extra-product-card__info {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 288px;
+    margin-bottom: 0;
+  }
+}
+
+.extra-product-card__info-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-product-card__value {
+  //fonts
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    // fonts
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.extra-product-card__price {
+  //fonts
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 49px;
+    //fonts
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.extra-product-card__button {
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 0 244px;
+    height: 40px;
+    margin-left: 38px;
+  }
+}
+
+
+.extra-product__promo {
+
+}

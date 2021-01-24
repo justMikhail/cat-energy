@@ -1,20 +1,20 @@
 // Normolize------------------------------------------------------------------------------
-@import "./common/normalize.scss";
+@import "./utils/normalize.scss";
 
 // Fonts----------------------------------------------------------------------------------
-@import "./common/fonts.scss";
+@import "./utils/fonts.scss";
 
 // Variables------------------------------------------------------------------------------
-@import "./common/variables.scss";
+@import "./utils/variables.scss";
 
 // Mixins---------------------------------------------------------------------------------
-@import "./common/mixins.scss";
+@import "./utils/mixins.scss";
 
 // Common---------------------------------------------------------------------------------
-@import "./common/common.scss";
+@import "./utils/common.scss";
 
 // Container
-@import "./common/container.scss";
+@import "./utils/container.scss";
 
 // Blocks---------------------------------------------------------------------------------
 
@@ -32,6 +32,7 @@
 // Any page
 @import "./blocks/logo.scss";
 @import "./blocks/main-button.scss";
+@import "./blocks/title-decor.scss";
 
 // Index`
 @import "./blocks/promo.scss";
@@ -46,6 +47,9 @@
 @import "./blocks/catalog.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/show-more.scss";
+@import "./blocks/extra-products.scss";
+@import "./blocks/extra-product-card.scss";
+@import "./blocks/extra-products-promo.scss";
 
 // Form
 @import "./blocks/program-selection.scss";

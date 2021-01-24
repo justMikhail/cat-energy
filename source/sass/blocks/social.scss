@@ -39,7 +39,7 @@
     width: 23px;
     height: 16px;
 
-    @media (max-width: $mobile-width-only) {
+    @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
     }
@@ -49,19 +49,19 @@
     width: 16px;
     height: 16px;
 
-    @media (max-width: $mobile-width-only) {
+    @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
     }
   }
 
   &--fb {
-    width: 20px;
+    width: 15px;
     height: 20px;
 
-    @media (max-width: $mobile-width-only) {
-      width: 28px;
-      height: 33px;
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 26px;
     }
   }
 }

@@ -1,0 +1,54 @@
+.title-decor {
+  --decor-mobile-padding: 22px;
+  --decor-tablet-padding: 42px;
+  --decor-mobile-margin: -22px;
+  --decor-tablet-margin: -42px;
+  position: relative;
+  padding: 0;
+  margin: 0 var(--decor-mobile-margin);
+  display: inline-block;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid $primary-500;
+    width: 200vw;
+    top: 0.5em;
+    left: -100vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 var(--decor-tablet-margin);
+    // fonts
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.title-decor__text {
+  position: relative;
+  background: $white;
+  padding: 0 var(--decor-mobile-padding);
+  margin: 0;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 var(--decor-tablet-padding);
+    margin-left: var(--decor-tablet-padding);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 var(--decor-tablet-padding);
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: min-content;
+  }
+}
