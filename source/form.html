@@ -73,33 +73,42 @@
                   <legend class="visually-hidden">Введите данные своего питомца</legend>
                   <ul class="form__list">
                     <li class="form__item-radio">
-                      <div class="form__radio-button radio-button">
-                        <input class="radio-button__input" type="radio" id="radio-1" name="program-choice" checked>
-                        <label class="radio-button__label" for="radio-1" tabindex="0">Похудение</label>
-                      </div>
+                      <button class="form__radio-button radio-button">
+                        <label class="radio-button__label" tabindex="0">
+                          <input class="radio-button__input" type="radio" name="program-choice" checked>
+                          <span class="radio-button__radio"></span>
+                          Похудение
+                        </label>
+                      </button>
                     </li>
                     <li class="form__item-radio">
-                      <div class="form__radio-button radio-button">
-                        <input class="radio-button__input" type="radio" id="radio-2" name="program-choice">
-                        <label class="radio-button__label" for="radio-2" tabindex="0">Набор массы</label>
-                      </div>
+                      <button class="form__radio-button radio-button">
+                        <label class="radio-button__label" tabindex="0">
+                          <input class="radio-button__input" type="radio" name="program-choice">
+                          <span class="radio-button__radio"></span>
+                          Набор массы
+                        </label>
+                      </button>
                     </li>
                     <li class="form__item-radio">
-                      <div class="form__radio-button radio-button">
-                        <input class="radio-button__input" type="radio" id="radio-3" name="program-choice">
-                        <label class="radio-button__label" for="radio-3" tabindex="0">Не знаю (нужен ваш совет)</label>
-                      </div>
+                      <button class="form__radio-button radio-button">
+                        <label class="radio-button__label" tabindex="0">
+                          <input class="radio-button__input" type="radio" name="program-choice">
+                          <span class="radio-button__radio"></span>
+                          Не знаю (нужен ваш совет)
+                        </label>
+                      </button>
                     </li>
                   </ul>
               </fieldset>
           </div>
 
           <fieldset class="form__fieldset form__customers-contact">
-              <legend class="form__subtitle form__subtitle--customers-contact page__title-type-2">
-                <p class="form__subtitle-text">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
+              <legend class="title-decor form__customers-contact-title">
+                <p class="title-decor__text">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
               </legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--customers-contact">
+                <li class="form__item form__item--customers-contact">
                   <label class="form__input" for="customers-email">
                     <span class="form__label">E-mail*:</span>
                     <input class="form__text-input" type="email" id="customers-email" name="customers-email" placeholder="kuklachev@gmail.com" required>
@@ -107,8 +116,8 @@
                       <use xlink:href="./img/icons/sprite.svg#icon_email"></use>
                     </svg>
                   </label>
-                </li class="form__item">
-                <li>
+                </li>
+                <li class="form__item form__item--customers-contact">
                   <label class="form__input" for="customers-tel">
                     <span class="form__label">Телефон:*</span>
                     <input class="form__text-input" type="tel" id="customers-tel" name="customers-tel" placeholder="8 (960) 900-60-90" required>
@@ -121,40 +130,51 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__customers-comment">
-              <legend class="form__subtitle form__subtitle--customer-comment page__title-type-2">
-                <label class="form__subtitle-text" for="comment">Комментарий</label>
+              <legend class="title-decor form__customers-comment-title">
+                <label for="comment"><span class="title-decor__text">Комментарий</span></label>
               </legend>
               <textarea class="form__textaria" id="comment" name="comment" rows="7" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__additional">
-              <legend class="form__subtitle form__subtitle--additional page__title-type-2">
-                <p class="form__subtitle-text">Дополнительно</p>
+              <legend class="title-decor form__additional-title">
+                <p class="title-decor__text">Дополнительно</p>
               </legend>
               <ul class="form__list">
                 <div class="form__checkboxes-wrapper">
                   <li class="form__item-checkbox">
                     <div class="additional__checkbox checkbox">
-                      <input class="checkbox__input" type="checkbox" id="sugarfree" name="sugarfree" value="sugarfree" checked>
-                      <label class="checkbox__label" for="sugarfree">Сахарозаменитель</label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="sugarfree" value="sugarfree" checked>
+                        <span class="checkbox__checkbox"></span>
+                        Сахарозаменитель
+                      </label>
                     </div>
                   </li>
                   <li class="form__item-checkbox">
                     <div class="additional__checkbox checkbox">
-                      <input class="checkbox__input" type="checkbox" id="water" name="water" value="water">
-                      <label class="checkbox__label" for="water">Питьевая вода</label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="water" value="water">
+                        <span class="checkbox__checkbox"></span>
+                        Питьевая вода
+                      </label>
                     </div>
                   </li>
                   <li class="form__item-checkbox">
                     <div class="additional__checkbox checkbox">
-                      <input class="checkbox__input" type="checkbox" id="milk" name="milk" value="milk">
-                      <label class="checkbox__label" for="milk">Молоко</label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="milk" value="milk">
+                        <span class="checkbox__checkbox"></span>
+                        Молоко
+                      </label>
                     </div>
                   </li>
                   <li class="form__item-checkbox">
                     <div class="additional__checkbox checkbox">
-                      <input class="checkbox__input" type="checkbox" id="vitamins" name="vitamins" value="vitamins">
-                      <label class="checkbox__label" for="vitamins">Витамины</label>
+                      <label class="checkbox__label">
+                        <input class="checkbox__input" type="checkbox" name="vitamins" value="vitamins">
+                        <span class="checkbox__checkbox"></span>
+                        Витамины</label>
                     </div>
                   </li>
                 </div>
@@ -207,7 +227,7 @@
           <li>
             <a class="social__link" href="https://vk.com">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="social__icon" width="23" height="16">
+              <svg class="social__icon social__icon--vk" width="23" height="16">
                 <use xlink:href="./img/icons/sprite.svg#icon_vk"></use>
               </svg>
             </a>
@@ -215,7 +235,7 @@
           <li>
             <a class="social__link" href="https://www.instagram.com/">
               <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg class="social__icon" width="16" height="16">
+              <svg class="social__icon social__icon--instagram" width="16" height="16">
                 <use xlink:href="./img/icons/sprite.svg#icon_instagram"></use>
               </svg>
             </a>
@@ -223,7 +243,7 @@
           <li>
             <a class="social__link" href="https://www.facebook.com/">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social__icon" width="13" height="20">
+              <svg class="social__icon social__icon--fb" width="13" height="20">
                 <use xlink:href="./img/icons/sprite.svg#icon_facebook"></use>
               </svg>
             </a>

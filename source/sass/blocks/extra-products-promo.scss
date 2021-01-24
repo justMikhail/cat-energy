@@ -1,0 +1,68 @@
+.extra-products-promo {
+  --extra-promo-mobile-height: 289px;
+  --extra-promo-tablet-height: 200px;
+  --extra-promo-desktop-height: 289px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58px 30px 43px 30px;
+  height: var(--extra-promo-mobile-height);
+  background-image: url("./../../img/catalog/extra-product-promo/gift-photo-mobile@1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../img/catalog/extra-product-promo/gift-photo-mobile@2.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 154px 0 77px;
+    height: var(--extra-promo-tablet-height);
+    background-image: url("./../../img/catalog/extra-product-promo/gift-photo-tablet@1.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/catalog/extra-product-promo/gift-photo-tablet@2.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 58px 30px 43px 30px;
+    height: var(--extra-promo-desktop-height);
+    background-image: url("./../../img/catalog/extra-product-promo/gift-photo-desktop@1.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../../img/catalog/extra-product-promo/gift-photo-desktop@2.png");
+    }
+  }
+}
+
+.extra-products-promo__img {
+
+}
+
+.extra-products-promo__icon {
+  fill: $white;
+}
+
+.extra-products-promo__text {
+  text-align: center;
+  color: $white;
+  // fonts
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    width: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

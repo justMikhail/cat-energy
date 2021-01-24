@@ -10,6 +10,30 @@
   }
 }
 
+.form__customers-contact-title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__customers-comment-title {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.form__additional-title {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
 // form__main-info
 .form__main-info {
   display: flex;
@@ -69,6 +93,13 @@
 .form__list {
   @include list-reset;
   width: 100%;
+
+  &--customers-contact {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .form__item {
@@ -80,6 +111,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  &--customers-contact {
+    @media (min-width: $desktop-width) {
+      flex: 0 1 47%;
+    }
   }
 }
 
@@ -148,6 +185,8 @@
 }
 
 .form__radio-button {
+  margin: 0;
+  padding: 0;
 }
 
 // form__customers-contact
@@ -160,69 +199,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
-  }
-}
-
-.form__subtitle {
-  --decor-mobile-padding: 22px;
-  --decor-tablet-padding: 42px;
-  --decor-mobile-margin: -22px;
-  --decor-tablet-margin: -42px;
-  position: relative;
-  padding: 0;
-  margin: 0 var(--decor-mobile-margin);
-
-  &::before {
-    content: "";
-    position: absolute;
-    border-bottom: 2px solid $primary-500;
-    width: 200vw;
-    top: 0.5em;
-    left: -100vw;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0 var(--decor-tablet-margin);
-  }
-
-  &--customers-contact {
-    margin-bottom: 35px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
-    }
-  }
-
-  &--customer-comment {
-    margin-bottom: 38px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
-    }
-  }
-
-  &--additional {
-    margin-bottom: 34px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 57px;
-    }
-  }
-}
-
-.form__subtitle-text {
-  position: relative;
-  background: $white;
-  padding: 0 var(--decor-mobile-padding);
-  margin: 0;
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 var(--decor-tablet-padding);
-  }
-
-  @media (max-width: $mobile-width-only) {
-    width: min-content;
   }
 }
 

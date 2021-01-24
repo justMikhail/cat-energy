@@ -1,6 +1,9 @@
 .radio-button {
   --radio-button-mobile-size: 30px;
   --radio-button-tablet-size: 40px;
+  --radio-button-border-size: 1px;
+
+  @include button-reset;
   display: flex;
   align-items: center;
   height: var(--radio-button-mobile-size);
@@ -12,10 +15,47 @@
 
 .radio-button__input {
   position: absolute;
-  left: -9999px;
+  appearance: none;
 
-  &:not(:checked) + label::after {
-    opacity: 0;
+  &:not(:checked) + .radio-button__radio {
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+
+.radio-button__radio {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--radio-button-mobile-size);
+  height: var(--radio-button-mobile-size);
+  border: var(--radio-button-border-size) solid $basic-100;
+  background-color: $white;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc((var(--radio-button-mobile-size) / 2) - var(--radio-button-border-size));
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 100%;
+    background-color: $primary-500;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: var(--radio-button-tablet-size);
+    height: var(--radio-button-tablet-size);
+
+    &::after {
+      left: calc((var(--radio-button-tablet-size) / 2) - var(--radio-button-border-size));
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -31,44 +71,12 @@
   font-size: 16px;
   line-height: 18px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: var(--radio-button-mobile-size);
-    height: var(--radio-button-mobile-size);
-    border: 1px solid $basic-100;
-    background-color: $white;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(var(--radio-button-mobile-size) / 2);
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 13.5px;
-    height: 13.5px;
-    border-radius: 100%;
-    background-color: $primary-500;
-  }
-
-  &:hover {
-    &::before {
-      border: 1px solid $basic-spec-4;
-    }
-
-    &::after {
-      opacity: 1;
-    }
+  &:hover + .radio-button__radio {
+    border: 1px solid $basic-spec-4;
   }
 
   &:active {
     opacity: 0.3;
-    border: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -76,14 +84,5 @@
     // fonts
     font-size: 20px;
     line-height: 30px;
-
-    &::before {
-      width: var(--radio-button-tablet-size);
-      height: var(--radio-button-tablet-size);
-    }
-
-    &::after {
-      left: calc(var(--radio-button-tablet-size) / 2);
-    }
   }
 }

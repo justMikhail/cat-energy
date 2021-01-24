@@ -1,6 +1,7 @@
 .checkbox {
   --checkbox-mobile-size: 26px;
   --checkbox-tablet-size: 40px;
+  --checkbox-border-size: 1px;
   display: flex;
   align-items: center;
   height: var(--checkbox-mobile-size);
@@ -12,10 +13,48 @@
 
 .checkbox__input {
   position: absolute;
-  left: -9999px;
+  appearance: none;
 
-  &:not(:checked) + label::after {
-    opacity: 0;
+  &:not(:checked) + .checkbox__checkbox {
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+
+.checkbox__checkbox {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--checkbox-mobile-size);
+  height: var(--checkbox-mobile-size);
+  border: 1px solid $basic-100;
+  background-color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc((var(--checkbox-mobile-size) / 2) - var(--checkbox-border-size));
+    top: 50%;
+    width: 18px;
+    height: 10px;
+    border-radius: 1px;
+    border-left: 2px solid $primary-500;
+    border-bottom: 2px solid $primary-500;
+    transform: translate(-50%, -70%) rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: var(--checkbox-tablet-size);
+    height: var(--checkbox-tablet-size);
+
+    &::after {
+      left: calc((var(--checkbox-tablet-size) / 2) - var(--checkbox-border-size));
+      width: 24px;
+      height: 12px;
+    }
   }
 }
 
@@ -31,43 +70,10 @@
   font-size: 16px;
   line-height: 18px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: var(--checkbox-mobile-size);
-    height: var(--checkbox-mobile-size);
-    border: 1px solid $basic-100;
-    background-color: $white;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: calc(var(--checkbox-mobile-size) / 2);
-    top: 50%;
-    width: 18px;
-    height: 10px;
-    border-radius: 1px;
-    border-left: 2px solid $primary-500;
-    border-bottom: 2px solid $primary-500;
-    transform: translate(-50%, -70%) rotate(-45deg);
-  }
-
   @media (min-width: $tablet-width) {
     padding-left: calc(var(--checkbox-tablet-size) + 19px);
-
-    &::before {
-      width: var(--checkbox-tablet-size);
-      height: var(--checkbox-tablet-size);
-    }
-
-    &::after {
-      left: calc(var(--checkbox-tablet-size) / 2);
-      width: 24px;
-      height: 14px;
-    }
+    // fonts
+    font-size: 20px;
+    line-height: 30px;
   }
 }

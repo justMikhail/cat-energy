@@ -55,22 +55,31 @@
   margin-bottom: 0;
 }
 
-// Titles
-.page__subtitle {
-  margin: 0;
-  // fonts
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+.page__catalog {
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
+.page__extra-products {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
+}
+
+// Titles
 .page__title-type-1 {
   // fonts
   font-family: "Oswald", "Arial", sans-serif;
@@ -83,24 +92,4 @@
     font-size: 60px;
     line-height: 60px;
   }
-}
-
-.page__title-type-2 {
-  // fonts
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
-// form
-
-.page__program-selection {
-
 }
