@@ -161,40 +161,48 @@
       </div>
     </section>
 
-    <section class="page__demo demo">
+    <section class="page__example example">
       <div class="container">
-        <div class="demo__container">
-          <h2 class="demo__title page__title-type-1">Живой пример</h2>
-          <p class="demo__text"></p>
-          <div class="demo__stats">
-            <div class="demo__stats-list">
-              <div class="demo__stats-item">
-                <dt class="demo__stats-key">Снижение веса</dt>
-                <dd class="demo__stats-value">5 кг</dd>
+        <div class="example__container">
+          <h2 class="example__title page__title-type-1">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
+          </p>
+          <div class="example__info">
+            <div class="example__info-list">
+              <div class="example__info-item">
+                <dt class="example__info-key">Снижение веса</dt>
+                <dd class="example__info-value">5 кг</dd>
               </div>
-              <div class="demo__stats-item">
-                <dt class="demo__stats-key">Затрачено времени</dt>
-                <dd class="demo__stats-value">60 дней</dd>
+              <div class="example__info-item">
+                <dt class="example__info-key">Затрачено времени</dt>
+                <dd class="example__info-value">60 дней</dd>
               </div>
             </div>
-            <p class="demo__expenses">
+            <p class="example__info-expenses">
               <span>Затраты на питание: </span>
               <span>15 000 руб.</span>
             </p>
           </div>
 
-          <div class="demo__slider switch-slider switch-slider--nojs">
+          <div class="example__slider switch-slider switch-slider--js">
             <input class="switch-slider__before-checker visually-hidden" id="before" type="radio" name="compare">
             <input class="switch-slider__after-checker visually-hidden" id="after" type="radio" name="compare">
             <ul class="switch-slider__list">
               <li class="switch-slider__item">
                 <picture>
-
+                  <source type="image/webp"
+                    srcset="./img/demo/before@1x.webp 1x, ./img/demo/before@2x.webp 2x">
+                  <img src="./img/demo/before@1x.png 1x" srcset="./img/demo/before@2x.png 2x"
+                    width="280" height="232" alt="Питомец до употребления продуктов Cat Energy">
                 </picture>
               </li>
               <li class="switch-slider__item switch-slider__item--after">
                 <picture>
-
+                  <source type="image/webp"
+                    srcset="./img/demo/after@1x.webp 1x, ./img/demo/after@2x.webp 2x">
+                  <img src="./img/demo/after@1x.png 1x" srcset="./img/demo/after@2x.png 2x"
+                    width="280" height="232" alt="Питомец после употребления продуктов Cat Energy">
                 </picture>
               </li>
             </ul>
@@ -207,7 +215,7 @@
                   <span class="switch-slider__pin"></span>
                 </label>
               </div>
-              <label class="compare__label compare__label--after" for="after">Стало</label>
+              <label class="switch-slider__label switch-slider__label--after" for="after">Стало</label>
             </div>
           </div>
         </div>
