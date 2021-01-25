@@ -1,0 +1,114 @@
+.main-nav {
+  flex: 0 1 100%;
+
+  &--closed {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex: 1 0 auto;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 66px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 13px 20px 13px 20px;
+    border-top: 1px solid $basic-300;
+
+    &:last-child {
+      border-bottom: 1px solid $basic-300;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 37px;
+  }
+}
+
+.main-nav__link {
+  display: flex;
+  align-items: center;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  // fonts
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+    background-image: linear-gradient($primary-500, $primary-500);
+    background-position: 20% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    //fonts
+    font-size: 18px;
+    line-height: 24px;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 2px;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      @media (min-width: $tablet-width) {
+        background-image: $primary-500;
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+      background-image: linear-gradient($white, $white);
+    }
+  }
+}
