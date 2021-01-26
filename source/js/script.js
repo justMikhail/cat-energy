@@ -23,13 +23,13 @@
   const switchSlider = document.querySelector('.switch-slider');
 
   if (switchSlider) {
-    switchSlider.classList.add('switch-slider--js');
-    const second = switchSlider.querySelector('.switch-slider__item--after');
+    switchSlider.classList.add(`switch-slider--js`);
+    const second = switchSlider.querySelector(`.switch-slider__item--after`);
     const secondImg = second.querySelector('img');
-    const input = switchSlider.querySelector('.switch-slider__input');
-    const pin = switchSlider.querySelector('.switch-slider__pin');
-    const beforeLabel = switchSlider.querySelector('.switch-slider__label--before');
-    const afterLabel = switchSlider.querySelector('.switch-slider__label--after');
+    const input = switchSlider.querySelector(`.switch-slider__input`);
+    const pin = switchSlider.querySelector(`.switch-slider__pin`);
+    const beforeLabel = switchSlider.querySelector(`.switch-slider__label--before`);
+    const afterLabel = switchSlider.querySelector(`.switch-slider__label--after`);
 
     const setStyles = (val) => {
       pin.style.left = val;
@@ -42,21 +42,21 @@
       } else {
         const imgWidth = secondImg.clientWidth;
         const switchSliderWidth = switchSlider.clientWidth;
-        afterImage.style.right = `${(elWidth - imgWidth) / 2}px`;
+        secondImg.style.right = `${(switchSliderWidth - imgWidth) / 2}px`;
       }
     };
 
-    const inputHandler = () => setStyles('${input.value}%');
+    const inputHandler = () => setStyles(`${input.value}%`);
 
-    input.addEventListener('input', inputHandler);
-    input.addEventListener('change', inputHandler);
-    beforeLabel.addEventListener('click', () => setStyles('0'));
-    afterLabel.addEventListener('click', () => setStyles('100%'));
-    window.addEventListener('resize', setSecondImgPos);
+    input.addEventListener("input", inputHandler);
+    input.addEventListener("change", inputHandler);
+    beforeLabel.addEventListener("click", () => setStyles(`0`));
+    afterLabel.addEventListener("click", () => setStyles(`100%`));
+    window.addEventListener("resize", setSecondImgPos);
 
     setSecondImgPos();
     if (window.innerWidth >= 768) {
-      setStyles('50%');
+      setStyles(`50%`);
     }
   }
 })();
