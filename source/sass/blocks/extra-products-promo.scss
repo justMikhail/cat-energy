@@ -28,19 +28,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 245px;
     flex-direction: column;
-    padding: 58px 30px 43px 30px;
+    padding: 58px 30px 28px 30px;
     height: var(--extra-promo-desktop-height);
-    background-image: url("./../../img/catalog/extra-product-promo/gift-photo-desktop@1.png");
+    background-image: url("./../img/catalog/extra-product-promo/gift-photo-desktop@1.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./../../img/catalog/extra-product-promo/gift-photo-desktop@2.png");
+      background-image: url("./../img/catalog/extra-product-promo/gift-photo-desktop@2.png");
     }
   }
-}
-
-.extra-products-promo__img {
-
 }
 
 .extra-products-promo__icon {
