@@ -15,10 +15,26 @@
   position: absolute;
   appearance: none;
 
-  &:not(:checked) + .checkbox__checkbox {
+  &:checked + .checkbox__checkbox {
     &::after {
-      opacity: 0;
+      opacity: 1;
     }
+  }
+
+  &:focus + .checkbox__checkbox {
+    border: 1px solid $basic-spec-4;
+  }
+
+  &:hover + .checkbox__checkbox {
+    border: 1px solid $basic-spec-4;
+  }
+
+  &:disabled ~ .checkbox__checkbox {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .checkbox__text {
+    opacity: 0.3;
   }
 }
 
@@ -44,6 +60,7 @@
     border-left: 2px solid $primary-500;
     border-bottom: 2px solid $primary-500;
     transform: translate(-50%, -70%) rotate(-45deg);
+    opacity: 0;
   }
 
   @media (min-width: $tablet-width) {

@@ -16,6 +16,10 @@
     padding: 0 30px 40px 35px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px 38px;
+  }
+
   &--show-more {
     flex-direction: column;
     background-color: inherit;
@@ -50,7 +54,7 @@
 .product-card__title-link {
   display: block;
   width: 76px;
-  margin: 0 0 18px;
+  margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
     width: 150px;
@@ -142,5 +146,8 @@
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
-}
 
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
