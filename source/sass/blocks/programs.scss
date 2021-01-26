@@ -177,6 +177,10 @@
     line-height: 30px;
   }
 
+  &:focus {
+    border: 1px dashed $basic-spec-9;
+  }
+
   &:hover span {
     width: var(--hover-arrow-width);
 

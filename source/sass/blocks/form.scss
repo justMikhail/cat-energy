@@ -43,7 +43,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
   }
 }
 
@@ -167,6 +167,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
 }
 
 .form__text-input {
@@ -182,10 +186,6 @@
 
   &::placeholder {
     text-transform: uppercase;
-  }
-
-  &:required:valid {
-    border: 2px solid $primary-500;
   }
 
   &:invalid {
@@ -236,14 +236,15 @@
 
 .form__input-icon {
   position: absolute;
-  right: 15px;
 
   &--email {
+    right: 15px;
     fill: none;
     stroke: $black;
   }
 
   &--phone {
+    right: 15px;
     fill: $black;
   }
 }

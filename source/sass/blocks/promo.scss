@@ -8,7 +8,7 @@
     left: 0;
     bottom: 38%;
     right: 0;
-    background-image: url("../../img/promo/index_promo_bg_mobile.jpg");
+    background-image: url("../img/promo/index_promo_bg_mobile.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/promo/index_promo_bg_desktop.jpg");
+      background-image: url("../img/promo/index_promo_bg_desktop.jpg");
       top: -$header-desktop-height;
       left: 50%;
       bottom: 0;
