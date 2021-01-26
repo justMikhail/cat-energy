@@ -40,7 +40,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.min.css")) // sryle.css --> style.mon.css
+    .pipe(rename("style.min.css")) // sryle.css --> style.min.css
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());

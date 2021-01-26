@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 37px;
+    margin-left: 34px;
   }
 }
 
@@ -79,6 +79,7 @@
     background-size: 0% 2px;
     transition: background-size 0.3s;
     //fonts
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 
@@ -101,6 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    // fonts
     font-size: 20px;
     line-height: 30px;
   }

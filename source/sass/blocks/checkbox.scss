@@ -70,6 +70,12 @@
   font-size: 16px;
   line-height: 18px;
 
+  &:hover {
+    .checkbox__checkbox {
+      border: 1px solid $basic-spec-4;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: calc(var(--checkbox-tablet-size) + 19px);
     // fonts

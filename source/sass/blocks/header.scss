@@ -17,18 +17,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 150px;
+    height: $header-desktop-height;
   }
 }
 
 .header__logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 1 1 auto;
   min-height: 66px;
 
   @media (min-width: $tablet-width) {
     flex: 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
   }
 }
 

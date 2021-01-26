@@ -1,4 +1,7 @@
 .program-selection {
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
 }
 
 .program-selection__title {
