@@ -1,7 +1,9 @@
 .extra-products {
+  background-color: inherit;
 }
 
 .extra-poducts__container {
+  background-color: inherit;
 }
 
 .extra-products__title {
@@ -39,12 +41,12 @@
   }
 }
 
-.extra-products__item {
-}
-
-.extra-products__promo {
-
-}
-
 .extra-products-promo__icon {
+  width: 78px;
+  height: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+  }
 }

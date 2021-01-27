@@ -8,14 +8,20 @@
     left: 0;
     bottom: 38%;
     right: 0;
+    background-color: $primary-500;
     background-image: url("../img/promo/index_promo_bg_mobile.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/index_promo_bg_mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       background-image: none;
+      background-color: transparent;
     }
 
     @media (min-width: $desktop-width) {
@@ -24,6 +30,10 @@
       left: 50%;
       bottom: 0;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo/index_promo_bg_desktop@2x.jpg");
+      }
     }
   }
 
