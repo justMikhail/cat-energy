@@ -71,6 +71,10 @@
   font-size: 20px;
   line-height: 20px;
 
+  &:focus {
+    @include basic-focus;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 40px;
     background-image: linear-gradient($primary-500, $primary-500);

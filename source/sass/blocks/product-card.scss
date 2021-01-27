@@ -140,6 +140,10 @@
   margin-top: auto;
   height: 40px;
 
+  &:focus {
+    @include basic-focus;
+  }
+
   //fonts
   text-transform: uppercase;
   font-weight: 400;

@@ -85,4 +85,8 @@
   &:active {
     color: $basic-spec-5-03;
   }
+
+  &:focus {
+    @include basic-focus;
+  }
 }
