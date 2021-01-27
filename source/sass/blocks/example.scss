@@ -114,6 +114,8 @@
 
 .example__info-key {
   position: absolute;
+  margin-bottom: 0;
+  margin-top: 0;
   top: 100%;
   transform: translateY(-50%);
   width: calc(var(--stats-item-mobile-width) * 0.7);
