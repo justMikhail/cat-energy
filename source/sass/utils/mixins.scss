@@ -29,3 +29,8 @@
 @mixin legend-reset {
   display: table;
 }
+
+@mixin basic-focus {
+  outline: 2px solid $basic-spec-9;
+  outline-offset: 1px;
+}

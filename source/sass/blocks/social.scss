@@ -26,6 +26,10 @@
   min-height: 50px;
   padding: 0 17.5px;
 
+  &:focus {
+    @include basic-focus;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 14px;
   }
