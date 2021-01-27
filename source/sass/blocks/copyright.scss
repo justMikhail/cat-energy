@@ -20,6 +20,14 @@
   &:active .copyright__text {
     opacity: 0.3;
   }
+
+  &:focus {
+    @include basic-focus;
+  }
+
+  &:focus .copyright__icon {
+    fill: $primary-500;
+  }
 }
 
 .copyright__text {

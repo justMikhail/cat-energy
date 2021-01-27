@@ -168,6 +168,11 @@
 }
 
 .promo__button {
+  &:focus {
+    outline: 4px solid $basic-spec-9;
+    outline-offset: 1px;
+  }
+
   @media (max-width: $mobile-width-only) {
     width: 100%;
   }

@@ -31,6 +31,6 @@
 }
 
 @mixin basic-focus {
-  outline: 2px solid $basic-spec-9;
+  outline: 2px dashed $basic-spec-9;
   outline-offset: 1px;
 }

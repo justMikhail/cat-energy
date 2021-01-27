@@ -1,6 +1,11 @@
 .burger {
   @include button-reset;
 
+  &:focus {
+    outline: 3px dashed $focus-spec;
+    outline-offset: 1px;
+  }
+
 
   width: 25px;
   height: 25px;

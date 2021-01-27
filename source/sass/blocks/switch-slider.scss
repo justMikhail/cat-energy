@@ -140,8 +140,15 @@
   margin: 0;
   opacity: 0;
 
-  &:focus ~ .switch-slider__pin {
-    outline: 1px dashed $basic-100;
+  @media (min-width: $tablet-width) {
+    &:hover ~ .switch-slider__pin {
+      box-shadow: 0 4px 10px 0 $black-spec-03;
+    }
+
+    &:active ~ .switch-slider__pin,
+    &:focus ~ .switch-slider__pin {
+      border: 1px solid $primary-500;
+    }
   }
 }
 
